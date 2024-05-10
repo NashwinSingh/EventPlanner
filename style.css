@@ -5,3 +5,42 @@
     padding: 5px;
     margin: 10px;
 }
+.box {
+    width: max-content;
+    height: max-content;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+@media (max-width: 600px) {
+    .box {
+        width: 100%;
+        border: 1px solid gray; 
+        padding: 10px; 
+        margin: 5px 0; 
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 1rem; 
+    }
+}
+
+/* Media query for medium-sized screens (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .box {
+        width: 80%; /* Reduce width to fit within smaller tablets */
+        border: 2px solid black; /* Retain the border */
+        padding: 8px; /* Slightly more padding */
+    }
+}
+
+/* Media query for large screens (laptops, desktops) */
+@media (min-width: 1025px) {
+    .box {
+        width: 60%; /* Set a narrower width for large screens */
+        padding: 10px; /* Standard padding */
+    }
+}
